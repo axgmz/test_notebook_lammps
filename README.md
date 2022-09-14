@@ -6,5 +6,5 @@ My Binder can be used to interact with these notebooks online:
 
 ## Running
 
-Lammps MD run in `1-MD/1-SPCE_343-H2O/` needs 25 min to finish
+Lammps MD run in `1-MD/1-SPCE_343-H2O/` needs 3 min to finish
 
