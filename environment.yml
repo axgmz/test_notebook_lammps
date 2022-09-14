@@ -1,0 +1,10 @@
+name: lammps
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - matplotlib=3.5.3
+  - numpy
+  - jupyterlab
+  - lammps
