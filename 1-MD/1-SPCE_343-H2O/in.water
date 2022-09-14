@@ -8,14 +8,14 @@ variable tol equal 1.0e-4
 ###
 
 ### User Config
-variable num_ns equal 100
+variable num_ps equal 10
 variable T equal 300
 variable ts equal 1.0
 ###
 
 ### Calculations
 variable prod_step equal ${ps}*${num_ps}
-variable equil equal ${ps}*20
+variable equil equal ${ps}*2
 ###
 
 units		real	
@@ -54,6 +54,9 @@ fix     1 all rattle ${tol} 20 0 b 1 a 1
 run             ${equil}
 
 thermo_modify   lost warn
+
+dump xyz all xyz 10 traj.xyz
+dump_modify xyz element O H
 
 run             ${prod_step}
 
